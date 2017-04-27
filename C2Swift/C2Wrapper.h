@@ -10,5 +10,6 @@
 
 @interface C2Wrapper : NSObject
 
--(void)foo;
++(void)runMPSTests;
+
 @end

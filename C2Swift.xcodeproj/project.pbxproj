@@ -16,6 +16,14 @@
 		089C14801EB1E65600127EE9 /* C2Wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 089C147F1EB1E65600127EE9 /* C2Wrapper.mm */; };
 		089C14831EB1EA8B00127EE9 /* libprotobuf-lite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 089C14811EB1EA8B00127EE9 /* libprotobuf-lite.a */; };
 		089C14841EB1EA8B00127EE9 /* libprotobuf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 089C14821EB1EA8B00127EE9 /* libprotobuf.a */; };
+		089C14901EB1ECFA00127EE9 /* MPSCNN.metal in Sources */ = {isa = PBXBuildFile; fileRef = 089C14891EB1ECFA00127EE9 /* MPSCNN.metal */; };
+		089C14911EB1ECFA00127EE9 /* mpscnn.mm in Sources */ = {isa = PBXBuildFile; fileRef = 089C148A1EB1ECFA00127EE9 /* mpscnn.mm */; };
+		089C14921EB1ECFA00127EE9 /* mpscnn_context.mm in Sources */ = {isa = PBXBuildFile; fileRef = 089C148C1EB1ECFA00127EE9 /* mpscnn_context.mm */; };
+		089C14961EB1ED4600127EE9 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089C14941EB1ED4600127EE9 /* Metal.framework */; };
+		089C14971EB1ED4600127EE9 /* MetalPerformanceShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089C14951EB1ED4600127EE9 /* MetalPerformanceShaders.framework */; };
+		089C149A1EB2048700127EE9 /* mpscnn_test.mm in Sources */ = {isa = PBXBuildFile; fileRef = 089C14991EB2048700127EE9 /* mpscnn_test.mm */; };
+		08A1BA131EB2095E00DD5417 /* libCAFFE2_NNPACK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A1BA111EB2095E00DD5417 /* libCAFFE2_NNPACK.a */; };
+		08A1BA141EB2095E00DD5417 /* libCAFFE2_PTHREADPOOL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A1BA121EB2095E00DD5417 /* libCAFFE2_PTHREADPOOL.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +40,18 @@
 		089C147F1EB1E65600127EE9 /* C2Wrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = C2Wrapper.mm; sourceTree = "<group>"; };
 		089C14811EB1EA8B00127EE9 /* libprotobuf-lite.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libprotobuf-lite.a"; path = "C2Swift/lib/libprotobuf-lite.a"; sourceTree = "<group>"; };
 		089C14821EB1EA8B00127EE9 /* libprotobuf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libprotobuf.a; path = C2Swift/lib/libprotobuf.a; sourceTree = "<group>"; };
+		089C14881EB1ECFA00127EE9 /* mpscnn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mpscnn.h; sourceTree = "<group>"; };
+		089C14891EB1ECFA00127EE9 /* MPSCNN.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = MPSCNN.metal; sourceTree = "<group>"; };
+		089C148A1EB1ECFA00127EE9 /* mpscnn.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = mpscnn.mm; sourceTree = "<group>"; };
+		089C148B1EB1ECFA00127EE9 /* mpscnn_context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mpscnn_context.h; sourceTree = "<group>"; };
+		089C148C1EB1ECFA00127EE9 /* mpscnn_context.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = mpscnn_context.mm; sourceTree = "<group>"; };
+		089C148D1EB1ECFA00127EE9 /* mpscnn_kernels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mpscnn_kernels.h; sourceTree = "<group>"; };
+		089C14941EB1ED4600127EE9 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		089C14951EB1ED4600127EE9 /* MetalPerformanceShaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShaders.framework; path = System/Library/Frameworks/MetalPerformanceShaders.framework; sourceTree = SDKROOT; };
+		089C14981EB2048700127EE9 /* mpscnn_test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mpscnn_test.h; sourceTree = "<group>"; };
+		089C14991EB2048700127EE9 /* mpscnn_test.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = mpscnn_test.mm; sourceTree = "<group>"; };
+		08A1BA111EB2095E00DD5417 /* libCAFFE2_NNPACK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCAFFE2_NNPACK.a; path = C2Swift/lib/libCAFFE2_NNPACK.a; sourceTree = "<group>"; };
+		08A1BA121EB2095E00DD5417 /* libCAFFE2_PTHREADPOOL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCAFFE2_PTHREADPOOL.a; path = C2Swift/lib/libCAFFE2_PTHREADPOOL.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +59,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08A1BA131EB2095E00DD5417 /* libCAFFE2_NNPACK.a in Frameworks */,
+				08A1BA141EB2095E00DD5417 /* libCAFFE2_PTHREADPOOL.a in Frameworks */,
+				089C14961EB1ED4600127EE9 /* Metal.framework in Frameworks */,
+				089C14971EB1ED4600127EE9 /* MetalPerformanceShaders.framework in Frameworks */,
 				089C14831EB1EA8B00127EE9 /* libprotobuf-lite.a in Frameworks */,
 				089C14841EB1EA8B00127EE9 /* libprotobuf.a in Frameworks */,
 				089C147C1EB1E64C00127EE9 /* libCaffe2_CPU.a in Frameworks */,
@@ -77,6 +101,7 @@
 				089C14711EB1E05800127EE9 /* LaunchScreen.storyboard */,
 				089C14741EB1E05800127EE9 /* Info.plist */,
 				089C147D1EB1E65600127EE9 /* C2Swift-Bridging-Header.h */,
+				089C14871EB1ECFA00127EE9 /* mpscnn-fb */,
 			);
 			path = C2Swift;
 			sourceTree = "<group>";
@@ -84,11 +109,31 @@
 		089C147A1EB1E64A00127EE9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				08A1BA111EB2095E00DD5417 /* libCAFFE2_NNPACK.a */,
+				08A1BA121EB2095E00DD5417 /* libCAFFE2_PTHREADPOOL.a */,
+				089C14941EB1ED4600127EE9 /* Metal.framework */,
+				089C14951EB1ED4600127EE9 /* MetalPerformanceShaders.framework */,
 				089C14811EB1EA8B00127EE9 /* libprotobuf-lite.a */,
 				089C14821EB1EA8B00127EE9 /* libprotobuf.a */,
 				089C147B1EB1E64C00127EE9 /* libCaffe2_CPU.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		089C14871EB1ECFA00127EE9 /* mpscnn-fb */ = {
+			isa = PBXGroup;
+			children = (
+				089C14881EB1ECFA00127EE9 /* mpscnn.h */,
+				089C14891EB1ECFA00127EE9 /* MPSCNN.metal */,
+				089C148A1EB1ECFA00127EE9 /* mpscnn.mm */,
+				089C148B1EB1ECFA00127EE9 /* mpscnn_context.h */,
+				089C148C1EB1ECFA00127EE9 /* mpscnn_context.mm */,
+				089C14981EB2048700127EE9 /* mpscnn_test.h */,
+				089C14991EB2048700127EE9 /* mpscnn_test.mm */,
+				089C148D1EB1ECFA00127EE9 /* mpscnn_kernels.h */,
+			);
+			name = "mpscnn-fb";
+			path = "include/caffe2/contrib/mpscnn-fb";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,9 +210,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				089C14901EB1ECFA00127EE9 /* MPSCNN.metal in Sources */,
 				089C146B1EB1E05800127EE9 /* ViewController.swift in Sources */,
+				089C14921EB1ECFA00127EE9 /* mpscnn_context.mm in Sources */,
 				089C14691EB1E05800127EE9 /* AppDelegate.swift in Sources */,
 				089C14801EB1E65600127EE9 /* C2Wrapper.mm in Sources */,
+				089C14911EB1ECFA00127EE9 /* mpscnn.mm in Sources */,
+				089C149A1EB2048700127EE9 /* mpscnn_test.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = PR6HV9J6AD;
 				ENABLE_BITCODE = NO;
@@ -299,6 +349,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/C2Swift/lib",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"-force_load",
+					C2Swift/lib/libCaffe2_CPU.a,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.s1ddok.C2Swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -312,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = PR6HV9J6AD;
 				ENABLE_BITCODE = NO;
@@ -321,6 +377,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/C2Swift/lib",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"-force_load",
+					C2Swift/lib/libCaffe2_CPU.a,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.s1ddok.C2Swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
