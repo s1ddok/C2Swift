@@ -12,6 +12,10 @@
 		089C146E1EB1E05800127EE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089C146C1EB1E05800127EE9 /* Main.storyboard */; };
 		089C14701EB1E05800127EE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 089C146F1EB1E05800127EE9 /* Assets.xcassets */; };
 		089C14731EB1E05800127EE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089C14711EB1E05800127EE9 /* LaunchScreen.storyboard */; };
+		089C147C1EB1E64C00127EE9 /* libCaffe2_CPU.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 089C147B1EB1E64C00127EE9 /* libCaffe2_CPU.a */; };
+		089C14801EB1E65600127EE9 /* C2Wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 089C147F1EB1E65600127EE9 /* C2Wrapper.mm */; };
+		089C14831EB1EA8B00127EE9 /* libprotobuf-lite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 089C14811EB1EA8B00127EE9 /* libprotobuf-lite.a */; };
+		089C14841EB1EA8B00127EE9 /* libprotobuf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 089C14821EB1EA8B00127EE9 /* libprotobuf.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,12 @@
 		089C146F1EB1E05800127EE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		089C14721EB1E05800127EE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		089C14741EB1E05800127EE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		089C147B1EB1E64C00127EE9 /* libCaffe2_CPU.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCaffe2_CPU.a; path = C2Swift/lib/libCaffe2_CPU.a; sourceTree = "<group>"; };
+		089C147D1EB1E65600127EE9 /* C2Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "C2Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		089C147E1EB1E65600127EE9 /* C2Wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C2Wrapper.h; sourceTree = "<group>"; };
+		089C147F1EB1E65600127EE9 /* C2Wrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = C2Wrapper.mm; sourceTree = "<group>"; };
+		089C14811EB1EA8B00127EE9 /* libprotobuf-lite.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libprotobuf-lite.a"; path = "C2Swift/lib/libprotobuf-lite.a"; sourceTree = "<group>"; };
+		089C14821EB1EA8B00127EE9 /* libprotobuf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libprotobuf.a; path = C2Swift/lib/libprotobuf.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				089C14831EB1EA8B00127EE9 /* libprotobuf-lite.a in Frameworks */,
+				089C14841EB1EA8B00127EE9 /* libprotobuf.a in Frameworks */,
+				089C147C1EB1E64C00127EE9 /* libCaffe2_CPU.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,7 @@
 			children = (
 				089C14671EB1E05800127EE9 /* C2Swift */,
 				089C14661EB1E05800127EE9 /* Products */,
+				089C147A1EB1E64A00127EE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +70,25 @@
 			children = (
 				089C14681EB1E05800127EE9 /* AppDelegate.swift */,
 				089C146A1EB1E05800127EE9 /* ViewController.swift */,
+				089C147E1EB1E65600127EE9 /* C2Wrapper.h */,
+				089C147F1EB1E65600127EE9 /* C2Wrapper.mm */,
 				089C146C1EB1E05800127EE9 /* Main.storyboard */,
 				089C146F1EB1E05800127EE9 /* Assets.xcassets */,
 				089C14711EB1E05800127EE9 /* LaunchScreen.storyboard */,
 				089C14741EB1E05800127EE9 /* Info.plist */,
+				089C147D1EB1E65600127EE9 /* C2Swift-Bridging-Header.h */,
 			);
 			path = C2Swift;
+			sourceTree = "<group>";
+		};
+		089C147A1EB1E64A00127EE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C14811EB1EA8B00127EE9 /* libprotobuf-lite.a */,
+				089C14821EB1EA8B00127EE9 /* libprotobuf.a */,
+				089C147B1EB1E64C00127EE9 /* libCaffe2_CPU.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +124,7 @@
 					089C14641EB1E05800127EE9 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = PR6HV9J6AD;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -139,6 +167,7 @@
 			files = (
 				089C146B1EB1E05800127EE9 /* ViewController.swift in Sources */,
 				089C14691EB1E05800127EE9 /* AppDelegate.swift in Sources */,
+				089C14801EB1E65600127EE9 /* C2Wrapper.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,11 +290,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = PR6HV9J6AD;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/C2Swift/include";
 				INFOPLIST_FILE = C2Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/C2Swift/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.s1ddok.C2Swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "C2Swift/C2Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -274,11 +312,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = PR6HV9J6AD;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/C2Swift/include";
 				INFOPLIST_FILE = C2Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/C2Swift/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.s1ddok.C2Swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "C2Swift/C2Swift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +348,7 @@
 				089C14791EB1E05800127EE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
