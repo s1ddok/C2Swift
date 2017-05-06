@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
 
@@ -14,6 +15,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         C2Wrapper.runMPSTests()
+
+        let start = Date()
+        let label = C2Wrapper.predict(with: #imageLiteral(resourceName: "cat.jpg"))!
+        let finish = Date()
+        
+        print("Prediction finished in time \(finish.timeIntervalSince(start)), with result: \(label)")
+        
     }
 
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		088064CE1EBB779F00FE23B6 /* UIImage+Caffe2.mm in Sources */ = {isa = PBXBuildFile; fileRef = 088064CD1EBB779F00FE23B6 /* UIImage+Caffe2.mm */; };
+		088064D31EBE630B00FE23B6 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 088064D21EBE630B00FE23B6 /* cat.jpg */; };
+		088064D51EBE6C6600FE23B6 /* exec_net.pb in Resources */ = {isa = PBXBuildFile; fileRef = 088064D41EBE6C6600FE23B6 /* exec_net.pb */; };
+		088064D71EBE6C6F00FE23B6 /* predict_net.pb in Resources */ = {isa = PBXBuildFile; fileRef = 088064D61EBE6C6F00FE23B6 /* predict_net.pb */; };
 		089C14691EB1E05800127EE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089C14681EB1E05800127EE9 /* AppDelegate.swift */; };
 		089C146B1EB1E05800127EE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089C146A1EB1E05800127EE9 /* ViewController.swift */; };
 		089C146E1EB1E05800127EE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089C146C1EB1E05800127EE9 /* Main.storyboard */; };
@@ -27,6 +31,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		088064CC1EBB779F00FE23B6 /* UIImage+Caffe2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Caffe2.h"; sourceTree = "<group>"; };
+		088064CD1EBB779F00FE23B6 /* UIImage+Caffe2.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+Caffe2.mm"; sourceTree = "<group>"; };
+		088064D11EBE118700FE23B6 /* imagenet_classes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imagenet_classes.h; sourceTree = "<group>"; };
+		088064D21EBE630B00FE23B6 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
+		088064D41EBE6C6600FE23B6 /* exec_net.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = exec_net.pb; sourceTree = "<group>"; };
+		088064D61EBE6C6F00FE23B6 /* predict_net.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = predict_net.pb; sourceTree = "<group>"; };
 		089C14651EB1E05800127EE9 /* C2Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C2Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		089C14681EB1E05800127EE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		089C146A1EB1E05800127EE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,14 +104,20 @@
 			children = (
 				089C14681EB1E05800127EE9 /* AppDelegate.swift */,
 				089C146A1EB1E05800127EE9 /* ViewController.swift */,
+				088064D11EBE118700FE23B6 /* imagenet_classes.h */,
 				089C147E1EB1E65600127EE9 /* C2Wrapper.h */,
 				089C147F1EB1E65600127EE9 /* C2Wrapper.mm */,
+				088064D41EBE6C6600FE23B6 /* exec_net.pb */,
+				088064D61EBE6C6F00FE23B6 /* predict_net.pb */,
+				088064D21EBE630B00FE23B6 /* cat.jpg */,
 				089C146C1EB1E05800127EE9 /* Main.storyboard */,
 				089C146F1EB1E05800127EE9 /* Assets.xcassets */,
 				089C14711EB1E05800127EE9 /* LaunchScreen.storyboard */,
 				089C14741EB1E05800127EE9 /* Info.plist */,
 				089C147D1EB1E65600127EE9 /* C2Swift-Bridging-Header.h */,
 				089C14871EB1ECFA00127EE9 /* mpscnn-fb */,
+				088064CC1EBB779F00FE23B6 /* UIImage+Caffe2.h */,
+				088064CD1EBB779F00FE23B6 /* UIImage+Caffe2.mm */,
 			);
 			path = C2Swift;
 			sourceTree = "<group>";
@@ -198,8 +214,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				089C14731EB1E05800127EE9 /* LaunchScreen.storyboard in Resources */,
+				088064D51EBE6C6600FE23B6 /* exec_net.pb in Resources */,
 				089C14701EB1E05800127EE9 /* Assets.xcassets in Resources */,
+				088064D31EBE630B00FE23B6 /* cat.jpg in Resources */,
 				089C146E1EB1E05800127EE9 /* Main.storyboard in Resources */,
+				088064D71EBE6C6F00FE23B6 /* predict_net.pb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +235,7 @@
 				089C14691EB1E05800127EE9 /* AppDelegate.swift in Sources */,
 				089C14801EB1E65600127EE9 /* C2Wrapper.mm in Sources */,
 				089C14911EB1ECFA00127EE9 /* mpscnn.mm in Sources */,
+				088064CE1EBB779F00FE23B6 /* UIImage+Caffe2.mm in Sources */,
 				089C149A1EB2048700127EE9 /* mpscnn_test.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIImage.h>
 
-@interface C2Wrapper : NSObject
+@interface C2Wrapper: NSObject
 
 +(void)runMPSTests;
+
++(NSString*)predictWithImage:(UIImage*)image;
 
 @end
