@@ -38,7 +38,7 @@ CGImageRef CGImageCopyWithSize(CGImageRef input, CGSize targetSize) {
     const int channels = 3;
     const int targetSize = targetHeight * targetWidth;
     
-    unsigned short* rawImageData = new unsigned short[targetHeight * targetWidth * 4];
+    unsigned char* rawImageData = new unsigned char[targetHeight * targetWidth * 4];
     
     CGContextRef contextRef = CGBitmapContextCreate(rawImageData,
                                                  targetWidth, targetHeight,
